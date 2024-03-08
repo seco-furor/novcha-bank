@@ -1,0 +1,4 @@
+new_id number;
+
+select account_seq.nextval into new_id from dual;
+
