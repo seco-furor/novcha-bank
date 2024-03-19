@@ -23,6 +23,8 @@ public class CardService implements BaseService{
     }
     @Override
     public void process() {
+        condition = true;
+
         while (condition) {
             System.out.println(_CARD_INITIAL_MESSAGE);
 

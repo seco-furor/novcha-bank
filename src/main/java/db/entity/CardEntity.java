@@ -6,7 +6,7 @@ public class CardEntity extends BaseDbEntity {
 
     private String cardNumber;
     private Double balance;
-    private Integer Account_id;
+    private Integer accounts_id;
 
     public String getCardNumber() {
         return cardNumber;
@@ -24,12 +24,12 @@ public class CardEntity extends BaseDbEntity {
         this.balance = balance;
     }
 
-    public Integer getAccount_id() {
-        return Account_id;
+    public Integer getAccounts_id() {
+        return accounts_id;
     }
 
-    public void setAccount_id(Integer Account_id) {
-        this.Account_id = Account_id;
+    public void setAccounts_id(Integer Account_id) {
+        this.accounts_id = Account_id;
     }
 
     @Override

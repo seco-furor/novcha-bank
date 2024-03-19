@@ -3,7 +3,7 @@ package service;
 import java.util.Scanner;
 
 import static app.AppConstants._INITIAL_MESSAGE;
-public class MainService implements BaseService{
+public class MainService implements BaseService {
     private boolean condition = true;
     private final Scanner scanner;
     private final AccountService accountService;
@@ -18,6 +18,8 @@ public class MainService implements BaseService{
 
     @Override
     public void process() {
+        condition = true;
+
         while (condition) {
             System.out.println(_INITIAL_MESSAGE);
             switch (scanner.nextInt()){
@@ -39,10 +41,4 @@ public class MainService implements BaseService{
             }
         }
     }
-
-    public void signIn(){
-
-    }
-
-
 }
