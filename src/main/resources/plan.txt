@@ -1,0 +1,4 @@
+Account:
+    create, update, delete,
+Card:
+    showMyCards, showCards, create, update, delete
