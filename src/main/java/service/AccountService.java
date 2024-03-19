@@ -56,19 +56,4 @@ public class AccountService implements BaseService{
             }
         }
     }
-
-    private void signIn(){
-        AccountEntity accountEntity = new AccountEntity();
-// find account -> findByUser_name
-        System.out.println("user_name => ");
-        String next = scanner.next();
-        AccountEntity byUserName =accountDAO.findByUserName(next);
-
-        if (byUserName != null){
-            System.out.println("User exist");
-        }else System.out.println("User not found");
-
-
-
-    }
 }
